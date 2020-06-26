@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Light"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/User_Profile"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:src="@drawable/ic_user_image" />
+
+    <TextView
+        android:id="@+id/User_Name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Kim Sarang"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+</LinearLayout>

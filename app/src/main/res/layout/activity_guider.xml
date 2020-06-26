@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_guider"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="piyushjohnson.assistdot.Guider">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linLayout"
+        android:layout_marginTop="455dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:text="NEXT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:textColor="@android:color/background_light"
+        style="@android:style/Widget.Holo.Button.Borderless"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:elevation="14dp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center" />
+
+</RelativeLayout>

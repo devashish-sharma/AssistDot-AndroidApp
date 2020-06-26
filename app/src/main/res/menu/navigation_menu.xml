@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/myday"
+            android:icon="@drawable/ic_today"
+            android:title="My Day" />
+
+        <item android:title="Categories">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/home"
+                        android:icon="@drawable/ic_red_radio_checked"
+                        android:title="Home" />
+                    <item
+                        android:id="@+id/work"
+                        android:icon="@drawable/ic_red_radio_checked"
+                        android:title="Work" />
+                    <item
+                        android:id="@+id/office"
+                        android:icon="@drawable/ic_red_radio_checked"
+                        android:title="Office" />
+                    <item
+                        android:id="@+id/add"
+                        android:icon="@drawable/ic_add_black_24dp"
+                        android:title="Add More" />
+                </group>
+            </menu>
+        </item>
+
+
+        <item android:title="Customise">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/archive"
+                        android:icon="@drawable/ic_archive"
+                        android:title="Archive" />
+                    <item
+                        android:id="@+id/trash"
+                        android:icon="@drawable/ic_trash"
+                        android:title="Trash" />
+                    <item
+                        android:id="@+id/Settings"
+                        android:icon="@drawable/ic_settings"
+                        android:title="Settings" />
+                </group>
+            </menu>
+        </item>
+
+    </group>
+
+</menu>

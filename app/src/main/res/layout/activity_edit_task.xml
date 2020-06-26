@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="piyushjohnson.assistdot.EditTask">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        app:cardElevation="2dp">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_edit_text"
+            android:drawableStart="@drawable/ic_task"
+            android:drawablePadding="6dp"
+            android:ems="10"
+            android:hint="Task Name"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:weightSum="4">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardview_light_background"
+                    android:button="@drawable/custom_radiobox"
+                    android:buttonTint="@color/md_blue_600"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardview_light_background"
+                    android:button="@drawable/custom_radiobox"
+                    android:buttonTint="@color/md_red_600"
+                    android:checked="false"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp" />
+
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardview_light_background"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:button="@drawable/custom_radiobox"
+                    android:buttonTint="@color/md_green_600"/>
+
+                <RadioButton
+                    android:id="@+id/radio4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardview_light_background"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:button="@drawable/custom_radiobox"
+                    android:buttonTint="@color/md_yellow_600"/>
+
+                <RadioButton
+                    android:id="@+id/radio5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardview_light_background"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:button="@drawable/custom_radiobox"
+                    android:buttonTint="@color/md_purple_600"/>
+                <RadioButton
+                    android:id="@+id/radio6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardview_light_background"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:button="@drawable/custom_radiobox"
+                    android:buttonTint="@color/md_orange_600"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:focusable="false"
+                android:background="@drawable/custom_edit_text"
+                android:drawablePadding="14dp"
+                android:drawableStart="@drawable/ic_due_date"
+                android:ems="10"
+                android:hint="Due date"
+                android:inputType="date" />
+
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:focusable="false"
+                android:background="@drawable/custom_edit_text"
+                android:drawablePadding="14dp"
+                android:drawableStart="@drawable/ic_reminder"
+                android:ems="10"
+                android:hint="Reminder"
+                android:inputType="time" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_edit_text"
+                android:dropDownWidth="match_parent"
+                android:entries="@array/category" />
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="22dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_edit_text"
+                android:drawablePadding="14dp"
+                android:drawableStart="@drawable/ic_subtasks"
+                android:ems="10"
+                android:hint="Subtasks"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_edit_text"
+                android:drawablePadding="14dp"
+                android:drawableStart="@drawable/ic_description"
+                android:ems="10"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                android:lines="10"
+                android:maxLines="10"
+                android:minLines="0"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

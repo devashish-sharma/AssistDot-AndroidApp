@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="piyushjohnson.assistdot"
+    tools:node="replace">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-sdk>
+        android:minSdkVersion="23"
+        android:targetSdkVersion="26"
+    </uses-sdk>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/FullscreenTheme">
+        </activity>
+        <activity
+            android:name=".EditTask"
+            android:parentActivityName=".Home"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Home"
+            android:theme="@style/FullscreenTheme" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0"
+            tools:node="replace" />
+
+        <activity android:name=".Guider"
+            android:theme="@style/FullscreenTheme"/>
+
+        <receiver android:name=".Reminder">
+        </receiver>
+
+        <service android:name=".ReminderService"
+            android:enabled="true">
+        </service>
+    </application>
+
+</manifest>
